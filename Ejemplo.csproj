@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7C8CA20-DF87-4CB8-8C40-7C03580272F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ejemplo</RootNamespace>
+    <AssemblyName>Ejemplo</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculoDeArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculoDeArea.Designer.cs">
+      <DependentUpon>CalculoDeArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CInss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CInss.Designer.cs">
+      <DependentUpon>CInss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClsLista.cs" />
+    <Compile Include="DataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGridView.Designer.cs">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosTipoLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatosTipoLista.Designer.cs">
+      <DependentUpon>DatosTipoLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ejemploDatagridview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ejemploDatagridview.Designer.cs">
+      <DependentUpon>ejemploDatagridview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EjemploTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EjemploTreeView.Designer.cs">
+      <DependentUpon>EjemploTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Examen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen.Designer.cs">
+      <DependentUpon>Examen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form2.Designer.cs">
+      <DependentUpon>form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImpuestoSS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpuestoSS.Designer.cs">
+      <DependentUpon>ImpuestoSS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI.Designer.cs">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notas.Designer.cs">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaHome1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaHome1.Designer.cs">
+      <DependentUpon>PracticaHome1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaHome2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaHome2.Designer.cs">
+      <DependentUpon>PracticaHome2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaHome4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaHome4.Designer.cs">
+      <DependentUpon>PracticaHome4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaHome5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaHome5.Designer.cs">
+      <DependentUpon>PracticaHome5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaHome6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaHome6.Designer.cs">
+      <DependentUpon>PracticaHome6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PraticaHome3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PraticaHome3.Designer.cs">
+      <DependentUpon>PraticaHome3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PS2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PS2.Designer.cs">
+      <DependentUpon>PS2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PS2switch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PS2switch.Designer.cs">
+      <DependentUpon>PS2switch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView.Designer.cs">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalculoDeArea.resx">
+      <DependentUpon>CalculoDeArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CInss.resx">
+      <DependentUpon>CInss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridView.resx">
+      <DependentUpon>DataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatosTipoLista.resx">
+      <DependentUpon>DatosTipoLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ejemploDatagridview.resx">
+      <DependentUpon>ejemploDatagridview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EjemploTreeView.resx">
+      <DependentUpon>EjemploTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen.resx">
+      <DependentUpon>Examen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form2.resx">
+      <DependentUpon>form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpuestoSS.resx">
+      <DependentUpon>ImpuestoSS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI.resx">
+      <DependentUpon>MDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notas.resx">
+      <DependentUpon>Notas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaHome1.resx">
+      <DependentUpon>PracticaHome1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaHome2.resx">
+      <DependentUpon>PracticaHome2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaHome4.resx">
+      <DependentUpon>PracticaHome4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaHome5.resx">
+      <DependentUpon>PracticaHome5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaHome6.resx">
+      <DependentUpon>PracticaHome6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PraticaHome3.resx">
+      <DependentUpon>PraticaHome3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PS2.resx">
+      <DependentUpon>PS2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PS2switch.resx">
+      <DependentUpon>PS2switch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView.resx">
+      <DependentUpon>TreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
